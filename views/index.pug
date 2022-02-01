@@ -1,0 +1,17 @@
+extends template 
+block body
+  
+  .row 
+    .col-5.offset-3.mt-5 
+      .card 
+        .card-body
+          .card-title Your Feedback
+          form(action="/create" method="post")
+            .mb-3 
+              label(for="title") Title 
+              input.form-control(name="title")
+            .mb-3 
+              label(for="text") Document Text
+              textarea.form-control(name="text" cols="30", rows="6") 
+            .mb-3 
+              button.btn.btn-primary Save

@@ -1,0 +1,12 @@
+include mixins/navegation
+
+doctype html 
+html 
+  head 
+    meta(charset="utf-8")
+    link(href="css/bootstrap.min.css" rel="stylesheet")
+    title Managing data 
+  body 
+    +navegation(pageTitle)
+    .container
+      block body
