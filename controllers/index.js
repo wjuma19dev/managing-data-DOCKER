@@ -3,7 +3,6 @@ const fs = require('fs');
 const slug = require('slug');
 
 exports.getIndex = (req, res, next) => {
-  console.log("Hello world from index page!");
   res.render('index', { pageTitle: 'Managing data' });
 }
 
